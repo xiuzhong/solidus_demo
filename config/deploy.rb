@@ -8,7 +8,7 @@ set :repo_url, "git@github.com:xiuzhong/solidus_demo.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/home/ec2-user/nextbig"
+set :deploy_to, "/home/ec2-user/nextbig"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -38,3 +38,5 @@ set :rails_env, :production
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+
+set :tmp_dir, "/home/ec2-user/tmp"
