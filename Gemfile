@@ -17,8 +17,13 @@ group :development do
   gem "capistrano-rails", "~> 1.3", require: false
   gem "capistrano-bundler", require: false
   gem "capistrano-rvm", require: false
+  gem 'capistrano3-puma', require: false
   gem "ed25519", require: false
   gem "bcrypt_pbkdf", require: false
 end
 
 gem 'uglifier'
+
+group :production do
+  gem 'puma'
+end
